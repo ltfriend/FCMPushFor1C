@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ГруппаНастройкиПодключения" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки подключения</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<United>false</United>
+			<ExtendedTooltip name="ГруппаНастройкиПодключенияРасширеннаяПодсказка" id="11"/>
+			<ChildItems>
+				<InputField name="ПроектFirebase" id="1">
+					<DataPath>ПроектFirebase</DataPath>
+					<ContextMenu name="ПроектFirebaseКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ПроектFirebaseРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="ФайлСекретногоКлюча" id="4">
+					<DataPath>ФайлСекретногоКлюча</DataPath>
+					<ChoiceButton>true</ChoiceButton>
+					<ContextMenu name="ФайлСекретногоКлючаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ФайлСекретногоКлючаРасширеннаяПодсказка" id="6"/>
+					<Events>
+						<Event name="StartChoice">ФайлСекретногоКлючаНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="ПутьКПрограммеOpenSSL" id="7">
+					<DataPath>ПутьКПрограммеOpenSSL</DataPath>
+					<ChoiceButton>true</ChoiceButton>
+					<ContextMenu name="ПутьКПрограммеOpenSSLКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ПутьКПрограммеOpenSSLРасширеннаяПодсказка" id="9"/>
+					<Events>
+						<Event name="StartChoice">ПутьКПрограммеOpenSSLНачалоВыбора</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаУведомление" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уведомление</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<United>false</United>
+			<ExtendedTooltip name="ГруппаУведомлениеРасширеннаяПодсказка" id="13"/>
+			<ChildItems>
+				<InputField name="ИдентификаторПолучателя" id="22">
+					<DataPath>ИдентификаторПолучателя</DataPath>
+					<ContextMenu name="ИдентификаторПолучателяКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ИдентификаторПолучателяРасширеннаяПодсказка" id="24"/>
+				</InputField>
+				<InputField name="ЗаголовокСообщения" id="17">
+					<DataPath>ЗаголовокСообщения</DataPath>
+					<ContextMenu name="ЗаголовокСообщенияКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ЗаголовокСообщенияРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="ТекстСообщения" id="14">
+					<DataPath>ТекстСообщения</DataPath>
+					<TitleLocation>Left</TitleLocation>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<MaxHeight>3</MaxHeight>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="ТекстСообщенияКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ТекстСообщенияРасширеннаяПодсказка" id="16"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Button name="ОтправитьУведомление" id="20">
+			<Type>UsualButton</Type>
+			<DefaultButton>true</DefaultButton>
+			<CommandName>Form.Command.ОтправитьУведомление</CommandName>
+			<ExtendedTooltip name="ОтправитьУведомлениеРасширеннаяПодсказка" id="21"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ДемонстрацияОтправкиPushУведомления</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ФайлСекретногоКлюча" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файл секретного ключа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>ФайлСекретногоКлюча</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПутьКПрограммеOpenSSL" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к программе OpenSSL</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>ПутьКПрограммеOpenSSL</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПроектFirebase" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проект Firebase</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>ПроектFirebase</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ЗаголовокСообщения" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заголовок сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>ЗаголовокСообщения</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ТекстСообщения" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ТекстСообщения</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ИдентификаторПолучателя" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор получателя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>ИдентификаторПолучателя</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОтправитьУведомление" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить уведомление</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить уведомление</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьУведомление</Action>
+		</Command>
+	</Commands>
+</Form>

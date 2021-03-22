@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.11">
+	<ConfigVersions>
+		<Metadata name="CommonModule.fcm_АутентификацияGoogleAPIКлиентСервер" id="21a5f2e2-39df-4e2d-81b1-4ec8700b2b46" configVersion="a653e08f0fbc9d8720a6d39f19d676402078216e"/>
+		<Metadata name="CommonModule.fcm_АутентификацияGoogleAPIКлиентСервер.Module" id="21a5f2e2-39df-4e2d-81b1-4ec8700b2b46.0" configVersion="4ac4877dc931f55be349efb26e525334dbbb092b"/>
+		<Metadata name="CommonModule.fcm_СлужебныйВызовСервера" id="4504cd6c-268a-4828-b75c-1f4cfafe24f5" configVersion="e1809c771f1d2f829d0b276ca9bdbd0acaad03c7"/>
+		<Metadata name="CommonModule.fcm_СлужебныйВызовСервера.Module" id="4504cd6c-268a-4828-b75c-1f4cfafe24f5.0" configVersion="4fdca0eb3cd5773ce180e880705514c02687e844"/>
+		<Metadata name="CommonModule.fcm_УведомленияКлиентСервер" id="ef3cfbb8-a9f5-4f17-bc1e-90eaf580c739" configVersion="7e2fab8d571356dfd7a72fc02f53fc42516eb465"/>
+		<Metadata name="CommonModule.fcm_УведомленияКлиентСервер.Module" id="ef3cfbb8-a9f5-4f17-bc1e-90eaf580c739.0" configVersion="46421b6323cc3325e7f23fcf7cc90a5f2136aacd"/>
+		<Metadata name="Configuration.БиблиотекаОтправкиPushУведомленийFCM" id="87828b3c-7684-4e0b-a233-adec1cc62dc1" configVersion="93a526fc871ca519b843e666106d0952e665c5eb"/>
+		<Metadata name="DataProcessor.ДемонстрацияОтправкиPushУведомления" id="4826156b-904b-48a2-923e-7dbff24b9e04" configVersion="55cd13f0e5438468f922f56b473486eeec3b39f3"/>
+		<Metadata name="DataProcessor.ДемонстрацияОтправкиPushУведомления.Form.Форма" id="49f13717-f25f-4767-aaf9-052bcdb3981e" configVersion="5b2b02514d0bf29c1140ce89815d2b9b3120006f"/>
+		<Metadata name="DataProcessor.ДемонстрацияОтправкиPushУведомления.Form.Форма.Form" id="49f13717-f25f-4767-aaf9-052bcdb3981e.0" configVersion="1c186561df9b77e48d71dba50e88ab9332f7be4b"/>
+		<Metadata name="Language.Русский" id="b810944c-61f9-42c4-b876-d1207879be20" configVersion="8e8118305d7e932a868be73962d85828fadd6713"/>
+		<Metadata name="Subsystem.fcm_ОтправкаPushУведомлений" id="1029e606-c1cd-4c3f-baac-f848395c9f87" configVersion="fa7101479b73f625a6f0b619df71b6376ead2b86"/>
+		<Metadata name="Subsystem.ДемонстрацияОтправкиPushУведомлений" id="c8bc3e67-166a-44ed-8048-8e15d7954ae8" configVersion="72a632a24902dac23a6ea32d883d0cf4a44be251"/>
+	</ConfigVersions>
+</ConfigDumpInfo>
